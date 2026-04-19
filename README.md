@@ -1,9 +1,13 @@
 # iyf-s10-week-08-coddy-m
  CommunityHub - Week 8 React Project
 
-👤 **Autor:** [Michelle Wanja]  
+👤 **Name:** [Michelle Wanja]  
 🔗 **GitHub:** [coddy-m]  
 📅 **Week:** 8 - React Fundamentals
+
+## Project Description
+- This project demonstrates core React fundamentals including component architecture, state management, event handling, props drilling, and immutable data patterns.
+
 
 ## 🚀 Features
 
@@ -16,19 +20,6 @@
 - ✅ Lifting state up for shared data
 - ✅ Bonus: Like/unlike posts, delete posts, search filter
 
-## 📁 Project Structure
-
-src/
-├── components/
-│ ├── Layout/ # Header, Footer, Sidebar
-│ ├── Post/ # PostCard, PostList, CreatePost
-│ ├── User/ # UserCard, UserProfile
-│ └── shared/ # Reusable Button, Input, Card
-├── App.jsx # Main app with state management
-├── main.jsx # Entry point
-└── index.css # Global styles
-
-
 ## Lessons Learned
 - Understand JSX syntax and expressions
 - Create functional components
@@ -40,17 +31,17 @@ src/
 - Update arrays/objects in state immutably
 - Lift state to share between components
 
+## Challenges Faced
+- Challenge :Like/unlike logic crashing
+- Solution : Simplified to boolean isLiked: false per post & added safe defaults in state initialization
+- Challenge :Stale state in setPosts()
+- Solution : Switched to functional updates: setPosts(prev => prev.map(...))
 
 
-## 🛠️ Getting Started
-
-```bash
-npm install
-npm run dev
-
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to run
+``` bash
+- git clone https://github.com/coddy-m/iyf-s10-week-08-coddy-m.git
+- cd iyf-s10-week-08-yourusername
+- npm install
+- npm run dev
 
