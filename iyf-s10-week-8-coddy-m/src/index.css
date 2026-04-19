@@ -1,0 +1,33 @@
+/* Like button states */
+.btn-secondary:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.btn-danger {
+  background: #fecaca;
+  color: #991b1b;
+  border: 1px solid #f87171;
+}
+.btn-danger:hover {
+  background: #f87171;
+  color: white;
+}
+
+/* Animation for new posts */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card.new-post {
+  animation: slideIn 0.3s ease-out;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
